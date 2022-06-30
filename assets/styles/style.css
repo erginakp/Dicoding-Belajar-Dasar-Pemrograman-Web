@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	box-sizing: border-box;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+.jumbotron {
+	display: flex;
+	flex-direction: column;
+	padding: 60px;
+	font-size: 20px;
+	background-color: #6C5B7B;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-family: 'Butterfly Kids', cursive;
+}
+
+.judul {
+	display: flex;
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	align-items: center;
+	text-align: center;
+	color: #C06C84
+}
+
+.judul:before, .judul:after {
+	content: " ";
+	border-top: 2px solid;
+	margin: 0 20px 0 0;
+	flex: 1 0 20px;
+}
+
+.judul:after {
+	margin: 0 0 0 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	padding: 5px;
+	display: flex;
+	background: #C06C84;
+	width: 99.2%;
+	margin-right: 20px;
+	float: left;
+	position: sticky;
+	top: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+nav ul li {
+	list-style-type: none;
+	position: relative;
+}
+
+nav ul li.dropdown:before {
+	content: '\f0d7';
+	font-family: fontAwesome;
+	position: absolute;
+	line-height: 50px;
+	color: #FFFFFF;
+	right: 5px;
+}
+
+nav ul li ul {
+	position: absolute;
+	background: #C06C84;
+	display: none;
+}
+nav ul li:hover ul {
+	display: block;
+}
+nav ul li ul li {
+	display: block;
+	width: 200px;
+}
+
+nav ul li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	font-weight: bold;
+}
+
+
+h2, h3{
+	color: #C06C84
+}
+
+main {
+	padding: 20px;
+	overflow: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+#content {
+	float: left;
+	width: 75%;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+.featured-image {
+	float: left;
+	margin: 10px;
+	width: 320px;
+	height: 200px;
+}
+
+.image {
+	margin: 10px;
+	width: 320px;
+	height: 200px;
+}
+
+.bullets {
+	list-style-type: square;
+}
+
+.gambar {
+	width: 300px;
+	padding: 5px;
+}
+
+.profile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	float: right;
+}
+
+.profile img {
+	width: 100%;
+	border-radius: 50px;
+}
+
+.fa {
+	font-size: 15px;
+	width: 25px;
+	cursor: pointer;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	color: white;
+	background-color: #C06C84;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+}
